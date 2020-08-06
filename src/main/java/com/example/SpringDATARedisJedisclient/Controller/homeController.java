@@ -42,7 +42,7 @@ import javax.annotation.Resource;
 public class homeController {
 	private final static Logger log = LoggerFactory.getLogger(SpringDataRedisJedisclientApplication.class);
 	// private Map<String, String> map = new HashMap<> ();
-
+//yjtyj
 	@Autowired
 	PriceRepository repo;
 	@Autowired
