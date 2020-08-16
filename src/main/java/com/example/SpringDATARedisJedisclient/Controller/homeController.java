@@ -186,11 +186,13 @@ public class homeController {
 
 	@DeleteMapping("/delstock")
 	public @ResponseBody String delstock(@RequestParam String id) {
-		if (stockrepo.findById(id).isEmpty())
+		if (stockrepo.findById(id).isPresent()) {
+			stockrepo.deleteById(id);
+			log.info("Deleted");
+			return id + "  " + "deleted successfully";
+		}else
 			return "record not found ";
-		stockrepo.deleteById(id);
-		log.info("Deleted");
-		return id + "  " + "deleted successfully";
-	}
+	
+		}
 
 }
