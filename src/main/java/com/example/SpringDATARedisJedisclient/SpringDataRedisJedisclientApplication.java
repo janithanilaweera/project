@@ -15,7 +15,7 @@ public class SpringDataRedisJedisclientApplication {
 	
 	//private final static Logger lo = LoggerFactory.getLogger(SpringDataRedisJedisclientApplication.class);
 	
-
+//sds
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataRedisJedisclientApplication.class, args);
