@@ -1,3 +1,4 @@
+
 package com.example.SpringDATARedisJedisclient.config;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
