@@ -35,9 +35,6 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-//import java.util.Optional;
-//import java.util.Map;
-
 @RestController
 public class homeController {
 	private final static Logger log = LoggerFactory.getLogger(SpringDataRedisJedisclientApplication.class);
@@ -78,23 +75,6 @@ public class homeController {
 		return repo.findByLocation(location);
 	}
 
-//	 @GetMapping("/all")
-//	  public @ResponseBody Iterable<User> getAllUsers() {
-//	    // This returns a JSON or XML with the users
-//		  repo2.save(new  User( "782840525v", "Name", "Location",  "Addres",  "Password")) ;
-//		 for ( User bb : repo2.findAll()) {
-//		  String s = bb.getName();
-//		  if ( "Name".equals(s))  // this the way to do a "If" statement with Strings   if ( "fuck".equals(s)) 
-//		    {
-//			  bb.setName("Sarath");
-//			  repo2.save(bb);
-//		    }
-//		 
-//		 }
-//		 repo2.save(new  User( "782840525v", "Name", "Lo",  "Addres",  "Password")) ;
-//		  repo2.save(new  User("78", "N", "Lo",  "Ad",  "Password")) ;
-//	    return   repo2.findAll();
-//	  }
 	@PostMapping("/adduser")
 	public @ResponseBody User adduser(@RequestParam String id, @RequestParam String firstName,
 			@RequestParam String location, @RequestParam String address, @RequestParam String password) {
